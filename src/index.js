@@ -10,8 +10,6 @@ const cp = require('child_process');
 
 const getRandomString = () => Math.random().toString(36).substring(7);
 
-console.log(process.argv);
-
 const extension = process.argv.length > 2 ? process.argv[2] : 'mjs';
 const regexp = new RegExp(`\.(test|spec)\.${extension}$`);
 
