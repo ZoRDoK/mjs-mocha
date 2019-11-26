@@ -21,7 +21,7 @@
     "type": "git",
     "url": "https://github.com/vpotseluyko/mjs-mocha"
   },
-  "author": "Nikita Eliseev npeliseev@gmail.com",
+  "author": "Nikita Eliseev <npeliseev@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.6.0",
