@@ -1,6 +1,6 @@
 {
-  "name": "mjs-mocha",
-  "version": "3.0.0",
+  "name": "@eliseevnp/mjs-mocha",
+  "version": "1.0.0",
   "description": "Simple (very) polyfill to emulate mocha tests in mjs enviroment. For use simply import",
   "keywords": [
     "mocha",
@@ -21,10 +21,7 @@
     "type": "git",
     "url": "https://github.com/vpotseluyko/mjs-mocha"
   },
-  "author": "vyacheslav.potseluyko@gmail.com",
-  "contributors": [
-    "romap0 <pavlov@pqlab.ru>"
-  ],
+  "author": "Nikita Eliseev npeliseev@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.6.0",
