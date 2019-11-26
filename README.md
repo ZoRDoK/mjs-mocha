@@ -29,9 +29,15 @@ Add the script to your `package.json`.
 }
 ```
 
-Then just run `npm test`.
+Then just run `npm test:mjs` or `npm test:js`.
 
-mjs-mocha will run all files witch matching by specifying extension. Default regexp matches all `*.test.mjs` and `*.spec.mjs` files in your repository. If you want matching all `*.test.js` and `*.spec.js` files in your repository you must provide `js` argument.
+mjs-mocha will run all files that match by specifying extension. Default regexp matches all `*.test.mjs` and `*.spec.mjs` files in your repository. If you want matching all `*.test.js` and `*.spec.js` files in your repository you must provide `js` argument.
+
+If you want to specify some options using the mjs-mocha CLI, please first specify the file extension for the tests, and then the options, like that:
+
+```shell
+mjs-mocha <file extension to test> <options>
+```
 
 Also you can specify test files to run by passing them as arguments.
 
