@@ -23,7 +23,7 @@ Add the script to your `package.json`.
 ```json
 {
   "scripts": {
-    "test:mjs": "mjs-mocha",
+    "test:mjs": "mjs-mocha mjs",
     "test:js": "mjs-mocha js"
   }
 }
