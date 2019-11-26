@@ -1,6 +1,6 @@
 {
   "name": "@eliseevnp/mjs-mocha",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple (very) polyfill to emulate mocha tests in mjs enviroment. For use simply import",
   "keywords": [
     "mocha",
