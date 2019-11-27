@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test:mjs": "node ../src/index.js mjs",
-    "test:js": "node ../src/index.js js"
+    "test:mjs": "mjs-mocha mjs",
+    "test:js": "mjs-mocha js"
   },
-  "author": "Nikita Eliseev npeliseev@gmail.com",
+  "author": "Nikita Eliseev <npeliseev@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "mjs-mocha": "file:../"
   }
 }
