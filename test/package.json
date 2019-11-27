@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test:mjs": "mjs-mocha mjs",
-    "test:js": "mjs-mocha js"
+    "test:mjs": "mjs-mocha --extension mjs",
+    "test:js": "mjs-mocha --extension js"
   },
   "author": "Nikita Eliseev <npeliseev@gmail.com>",
   "license": "MIT",

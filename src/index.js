@@ -10,7 +10,13 @@ const cp = require('child_process');
 
 const getRandomString = () => Math.random().toString(36).substring(7);
 
-const extension = process.argv.length > 2 ? process.argv[2] : 'mjs';
+let extension = 'mjs';
+const extensionIndex = process.argv.indexOf('--extension');
+if (extensionIndex !== -1) {
+  extension = process.argv[extensionIndex + 1];
+  process.argv.splice(extensionIndex, 2);
+}
+
 const regexp = new RegExp(`\.(test|spec)\.${extension}$`);
 
 const getTestFiles = (dir) => {
