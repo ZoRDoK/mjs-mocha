@@ -6,7 +6,7 @@ const { URL } = url;
 // eslint-disable-next-line import/prefer-default-export
 export function resolve(specifier, context, defaultResolve) {
   // it was changed in 12 version
-  let { parentURL: base = null } = parentModuleURL;
+  let { parentURL: base = null } = context;
 
   if (base) {
     // Convert parentModuleURL to system separator, remove leading backslash
