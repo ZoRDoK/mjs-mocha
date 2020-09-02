@@ -4,8 +4,9 @@ import path from 'path';
 const { URL } = url;
 
 // eslint-disable-next-line import/prefer-default-export
-export function resolve(specifier, parentModuleURL, defaultResolve) {
-  let base = parentModuleURL;
+export function resolve(specifier, context, defaultResolve) {
+  // it was changed in 12 version
+  let { parentURL: base = null } = parentModuleURL;
 
   if (base) {
     // Convert parentModuleURL to system separator, remove leading backslash
